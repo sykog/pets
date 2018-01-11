@@ -7,8 +7,10 @@ $f3 = Base::instance();
 
 // define a default route
 $f3->route('GET /', function() {
-    echo '<h1>Pets Home</h1>';
+    $view = new View();
 
+    echo $view->render
+    ('views/home.html');
 }
 );
 
